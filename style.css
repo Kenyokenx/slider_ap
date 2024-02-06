@@ -22,10 +22,10 @@ body {
 }
 
 #background-container {
-    overflow: hidden;
-    height: 100%;
+    background-image: url(./fondo_1500x446.webp);
+    background-size: cover;
+    background-position: right;
     width: 100%;
-    position: relative;
 }
 
 #background-image {
@@ -41,9 +41,9 @@ body {
     width: 400px;
     height: 446px;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%; /* Centra proporcionalmente en relación al ancho del contenedor */
-    transform: translateX(-50%); /* Ajusta para centrar proporcionalmente */
+    transform: translate(-50%, -50%); /* Ajusta para centrar proporcionalmente */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,19 +63,20 @@ body {
 
     #right-panel {
         order: -1; /* Cambia el orden de los elementos dentro de #slider-container */
+        display: flex;
+        width: 100%;
     }
 
     #left-panel {
         width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
+        display: flex;
     }
 
     #background-container {
-        position: static; /* Elimina la posición absoluta para que el fondo esté en el flujo del documento */
         width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
     }
 
     #floating-svg-container {
-        position: static; /* Elimina la posición absoluta para que el llamado.svg esté en el flujo del documento */
         width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
     }
 }
