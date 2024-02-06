@@ -73,7 +73,7 @@ body {
 
    #right-panel{
     order: -1;
-    width: auto;
+    width: 100%;
     min-height: 380px;
     height: 100%;
    }
